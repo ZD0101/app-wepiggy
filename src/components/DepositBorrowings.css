@@ -1,0 +1,40 @@
+.Actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.LiquidationReminder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #F5F6F8;
+    color: #292929;
+    padding: 10px;
+}
+
+.LiquidationReminder:hover {
+    background-color: #FF4C94;
+    color: white;
+    cursor: pointer;
+}
+
+
+hr {
+    width: 100%;
+    opacity: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Title {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.Active {
+}

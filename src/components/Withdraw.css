@@ -1,0 +1,8 @@
+.Withdraw {
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}

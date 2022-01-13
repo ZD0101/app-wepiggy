@@ -1,0 +1,50 @@
+.DepositWithdraw {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.Button {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 180px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.Active {
+    clip-path: inset(-8px -8px 0px -8px);
+}
+
+.Button:hover {
+    background-color: #FF4C94;
+    cursor: pointer;
+}
+
+.Items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ItemsLeft {
+    margin-bottom: 30px;
+}
+
+.ItemsRight {
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+hr {
+    border: 1px dotted #E9E9E8;
+    color: #E9E9E8;
+    background-color: #fff;
+}

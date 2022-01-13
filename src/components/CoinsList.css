@@ -1,0 +1,17 @@
+.CoinsList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.SearchAction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SearchBox {
+    width: 200px;
+    height: 50px;
+}
+
+

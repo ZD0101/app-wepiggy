@@ -1,0 +1,52 @@
+.Coin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #F7F8FB;
+    margin-bottom: 10px;
+    height: 85px;
+}
+
+.Coin:hover {
+    box-shadow: 2px 2px dodgerblue;
+    cursor: pointer;
+}
+
+.CoinInfo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    flex: 0.25;
+}
+
+.CoinInfoImage {
+    width: 30px;
+    margin-right: 15px;;
+}
+
+.CoinInfoName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.Name {
+    color: gray;
+    margin-top: 5px;
+}
+
+.ActionButtons {
+    display: flex;
+    width: 250px;
+
+}
+
+.ActionButtons button {
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+}

@@ -1,0 +1,32 @@
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 240px;
+    position: fixed;
+    background-image: linear-gradient(#F3818E, #FF4995);
+    height: 100%;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.SidebarTitle {
+    color: white;
+}
+
+.BlockInfo {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.ToggleMenu {
+    display: none;
+}
+
+.ToggleMenu:hover {
+    cursor: pointer;
+}

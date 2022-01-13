@@ -1,0 +1,68 @@
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.asset { grid-area: 1 / 1 / 2 / 2; }
+
+.deposit { grid-area: 1 / 2 / 2 / 3; }
+
+.Deposit-Market { grid-area: 1 / 2 / 2 / 3; }
+
+.Asset { grid-area: 1 / 1 / 2 / 2; }
+
+.Deposit-Total-APY { grid-area: 1 / 3 / 2 / 4; }
+
+.Borrow-Market { grid-area: 1 / 4 / 2 / 5; }
+
+.Borrow-Total-APY { grid-area: 1 / 5 / 2 / 6; }
+
+.Liquidity { grid-area: 1 / 6 / 2 / 7; }
+
+.Action { grid-area: 1 / 7 / 2 / 8; }
+
+.Ethereum { grid-area: 2 / 1 / 3 / 2; }
+
+.M { grid-area: 2 / 2 / 3 / 3; }
+
+.Deposit-Value { grid-area: 2 / 2 / 3 / 3; }
+
+.Deposit-APY-Value- { grid-area: 2 / 3 / 3 / 4; }
+
+.Borrow-Value { grid-area: 2 / 4 / 3 / 5; }
+
+.Borrow-APY { grid-area: 2 / 5 / 3 / 6; }
+
+.Borrow-APY-Value { grid-area: 2 / 5 / 3 / 6; }
+
+.Liquidity-Value { grid-area: 2 / 6 / 3 / 7; }
+
+.Buttons { grid-area: 2 / 7 / 3 / 8; }
+
+
+html, body , .container {
+    height: 100%;
+    margin: 0;
+}
+
+/* For presentation only, no need to copy the code below */
+
+.container * {
+    border: 1px solid red;
+    position: relative;
+}
+
+.container *:after {
+    content:attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}

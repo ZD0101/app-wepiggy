@@ -1,0 +1,16 @@
+.InfoBlock {
+    border: 1px solid whitesmoke;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex: 0.3;
+    background-color: #F5F5FB;
+}
+
+.InfoBlockTitle {
+
+}
+
+.InfoBlockPrice {
+    color: deeppink;
+}
