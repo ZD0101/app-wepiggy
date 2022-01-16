@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 10px;
+    font-size: 1em;
 }
 
 .LiquidationReminder {
@@ -23,7 +25,6 @@
     cursor: pointer;
 }
 
-
 hr {
     width: 100%;
     opacity: 50%;
@@ -32,9 +33,28 @@ hr {
 }
 
 .Title {
-    margin-right: 20px;
+    margin-right: 50px;
     cursor: pointer;
 }
 
 .Active {
 }
+
+.Content {
+    margin-top: 50px;
+}
+
+.ActionButtons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .Actions {
+        justify-content: center;
+    }
+}
+
+

@@ -1,13 +1,7 @@
-import React, {useState} from 'react';
-import "./CoinsList.css"
-import {Button, Grid} from "@mui/material";
-import {useNavigate} from "react-router";
-import Coin from "./Coin";
+import React from 'react';
+import CoinMobile from "./CoinMobile";
 
-function CoinsList(props) {
-
-    const [searchTerm, setSearchTerm] = useState('')
-    let navigate = useNavigate()
+function CoinListMobile(props) {
 
     let coins = [
         {
@@ -102,36 +96,20 @@ function CoinsList(props) {
         }
     ]
 
-    function filterCoins(event) {
-        coins = coins.filter(c => c.name.includes(event.target.value))
-        console.log(coins)
-    }
-
     return (
-        <div className="CoinsList">
-            <div className="SearchAction">
-                <h1>Markets</h1>
-                <input className="SearchBox" type="text" placeholder="Search token name"
-                       onChange={event => setSearchTerm(event.target.value)}/>
-            </div>
-            <div>
-
-                {/*<CoinFilters/>*/}
-                {coins.filter(c => c.name.toLowerCase().includes(searchTerm)).map(c => (
-                    <Coin key={c.name}
-                          name={c.name}
-                          ticker={c.ticker}
-                          image={c.image}
-                          depositMarket={c.depositMarket}
-                          depositTotalAPY={c.depositTotalAPY}
-                          borrowMarket={c.borrowMarket}
-                          liquidity={c.liquidity}
-                          borrowTotalAPY={c.borrowTotalAPY}
-                    />
-                ))}
-            </div>
+        <div className="CoinListMobile">
+            {coins.map((item, index) =>
+                <CoinMobile
+                    image={item.image}
+                    name={item.name}
+                    ticker={item.ticker}
+                    depositMarket={item.depositMarket}
+                    depositTotalAPY={item.depositTotalAPY}
+                    borrowMarket={item.borrowMarket}
+                    borrowTotalAPY={item.borrowTotalAPY}/>
+            )}
         </div>
     );
 }
 
-export default CoinsList;
+export default CoinListMobile;

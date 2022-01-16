@@ -6,6 +6,7 @@ function Deposits(props) {
     return (
         <div className="Deposits">
             <div>No deposits yet</div>
+            <br/>
             <RoundButton title="Deposit"/>
         </div>
     );

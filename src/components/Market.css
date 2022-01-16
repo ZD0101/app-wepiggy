@@ -1,0 +1,18 @@
+.Market {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+
+}
+
+.MarketContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.MarketContentData {
+    width: 100%;
+    margin-right: 25px;
+}

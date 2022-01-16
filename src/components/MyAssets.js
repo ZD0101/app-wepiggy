@@ -11,20 +11,18 @@ function MyAssets(props) {
 
     return (
         <div>
-            {
-                state.connected ?
-                    <div className="MyAssets">
-                        <h1 className="Title">My Assets</h1>
-                        <div className="MyAssetsContent">
-                            <MyAssetsInfo/>
-                            <div className="PendingClaim">
-                                <h3>Pending claim WPC</h3>
-                                <RoundButton title="Claim"/>
-                            </div>
+            {state.connected ?
+                <div className="MyAssets">
+                    <h1 className="Title">My Assets</h1>
+                    <div className="MyAssetsContent">
+                        <MyAssetsInfo/>
+                        <div className="PendingClaim">
+                            <h3>Pending claim WPC</h3>
+                            <RoundButton title="Claim"/>
                         </div>
-
-                        <DepositsBorrowings/>
-                    </div> : <ConnectWallet/>}
+                    </div>
+                    <DepositsBorrowings/>
+                </div> : <ConnectWallet/>}
         </div>
     );
 }

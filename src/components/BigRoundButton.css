@@ -1,0 +1,16 @@
+.BigRoundButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: #FF4C94;
+    color: white;
+    margin-right: 10px;
+}
+
+.BigRoundButton:hover {
+    background-color: #ff6aa6;
+    cursor: pointer;
+}

@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
 }
 
 .Active {
@@ -21,7 +21,7 @@
 }
 
 .Button:hover {
-    background-color: #FF4C94;
+    background-color: #efefef;
     cursor: pointer;
 }
 
@@ -41,10 +41,36 @@
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     margin-left: 30px;
     border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.DepositInfoText {
+    color: gray;
+    font-size: 14px;
+}
+
+.TextValue {
+    font-size: 14px;
 }
 
 hr {
     border: 1px dotted #E9E9E8;
     color: #E9E9E8;
     background-color: #fff;
+    width: 85%;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .DepositWithdraw {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .DepositWithdraw {
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 550px;
+    }
 }

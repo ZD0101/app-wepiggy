@@ -1,4 +1,16 @@
 .TextColumn {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.TextColumn p {
+    margin: 0;
+    font-family: "Poppins Light";
+}
+
+.TextColumn p:nth-child(2) {
+    color: black;
+    font-family: Poppins;
 }

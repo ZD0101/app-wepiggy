@@ -5,3 +5,13 @@
     justify-content: space-between;
     height: fit-content;
 }
+
+@media only screen and (max-width: 600px) {
+    .InfoBlockContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+

@@ -6,6 +6,7 @@ function Borrowings(props) {
     return (
         <div className="Borrowings">
             <div>No borrowings yet</div>
+            <br/>
             <RoundButton title="Borrowings"/>
         </div>
     );

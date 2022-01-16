@@ -1,0 +1,60 @@
+.CoinFilters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 85px;
+}
+
+.CoinFiltersInner {
+    display: flex;
+    margin-left: 120px;
+    width: 900px;
+    justify-content: space-between;
+}
+
+.CoinInfo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    flex: 0.25;
+}
+
+.CoinInfoImage {
+    width: 30px;
+    margin-right: 15px;;
+}
+
+.CoinInfoName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.Name {
+    color: gray;
+    margin-top: 5px;
+}
+
+.CoinActionButtons {
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+}
+
+.CoinActionButtons button {
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+}
+
+.Button {
+    background-color: purple;
+}
+
+.PropertyName {
+    font-weight: 500;
+}

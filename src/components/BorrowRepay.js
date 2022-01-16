@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import Grid from "./Grid";
 import DepositWithdraw from "./DepositWithdraw";
 import {GlobalContext} from "./GlobalContext";
 import ConnectWallet from "./ConnectWallet";
