@@ -41,7 +41,12 @@ hr {
 }
 
 .Content {
-    margin-top: 50px;
+    margin-top: 10px;
+}
+
+.Actions {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .ActionButtons {

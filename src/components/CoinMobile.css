@@ -37,4 +37,16 @@
 .CoinMobileProps {
     display: flex;
     justify-content: space-around;
+
 }
+
+.CoinMobilePropName {
+    color: #919191;
+    font-weight: 500;
+}
+
+.CoinMobilePropValue {
+    color: black;
+    font-weight: 600;
+}
+

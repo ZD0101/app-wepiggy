@@ -10,6 +10,8 @@ import CoinViewPage from "./components/CoinViewPage";
 import ErrorPage from "./components/ErrorPage";
 import DepositWithdraw from "./components/DepositWithdraw";
 import {History} from "@mui/icons-material";
+import StakingPage from "./components/StakingPage";
+import NftDepositWithdraw from "./components/NftDepositWithdraw";
 import Footer from "./components/Footer";
 
 function useWindowSize() {
@@ -68,7 +70,7 @@ function App() {
         //     <div id="content1">Content1</div>
         //     <div id="content2">Content2</div>
         //     <div id="content3">Content3</div>
-        //     <footer>Footer</footer>
+        //     <footer>FooterOld</footer>
         //   </div>
         // </div>
         <Router>
@@ -86,6 +88,9 @@ function App() {
                                 <Route path="/access" element={<DepositWithdraw left="Deposit" right="Withdraw"/>}/>
                                 <Route path="/borrow" element={<DepositWithdraw left="Borrow" right="Repay"/>}/>
                                 <Route path="/history" element={<History/>}/>
+
+                                <Route path="/staking" element={<StakingPage/>}/>
+                                <Route path="/nft-deposit-withdraw" element={<NftDepositWithdraw/>}/>
                             </Routes>
                         </div>
                         {connected && <Footer/>}

@@ -42,8 +42,6 @@ function Sidebar() {
             link: "/records",
             icon: <HistoryIcon/>
         },
-
-
     ]
 
     let lowerLinks = [
@@ -57,6 +55,16 @@ function Sidebar() {
             link: "/liq",
             icon: <FaCoins size={25}/>
         },
+        {
+            title: "NFT Staking",
+            link: "/staking",
+            icon: <FaCoins size={25}/>
+        },
+        {
+            title: "NFT Deposit/Withdraw",
+            link: "/nft-deposit-withdraw",
+            icon: <FaCoins size={25}/>
+        }
     ]
 
     return (
@@ -71,7 +79,8 @@ function Sidebar() {
                 <ul className='nav-menu-items'>
                     <li className='navbar-toggle'>
                         <h1 className="title">App</h1>
-                        <NavLink to="#" onClick={() => setSidebar(!sidebar)} className='menu-bars toggle-off'>
+                        <NavLink to="#" onClick={() => setSidebar(!sidebar)}
+                                 className="menu-bars toggle-off">
                             <MenuIcon color="white"/>
                         </NavLink>
                     </li>
@@ -91,7 +100,7 @@ function Sidebar() {
                             // </li>
                         );
                     })}
-                    <div style={{ marginTop: 50,borderBottom: "1px solid gray"}}>
+                    <div style={{marginTop: 50, borderBottom: "1px solid gray"}}>
 
                     </div>
                     <div style={{marginTop: 50}}>

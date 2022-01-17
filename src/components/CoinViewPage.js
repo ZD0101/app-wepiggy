@@ -45,6 +45,10 @@ function CoinViewPage(props) {
 
     return (
         <div className="CoinViewPage">
+            <div className="CoinNameMobile">
+                <img src="https://www.pngall.com/wp-content/uploads/10/Ethereum-Logo-PNG.png" alt=""/>
+                <h1 className="CoinNameTitle" style={{marginRight: 10}}>{ticker.toUpperCase()}</h1>
+            </div>
             <div className="CoinBasicInfo">
                 <div className="CoinName">
                     <img src="https://www.pngall.com/wp-content/uploads/10/Ethereum-Logo-PNG.png" alt=""/>
@@ -70,12 +74,18 @@ function CoinViewPage(props) {
                     </div>
                     <div>
                         <div style={{textAlign: "left"}}>
-                            <h4 style={{fontWeight: 500}}>Available Liquidity</h4>
+                            <h4 style={{fontWeight: 500, color: "gray"}}>Available Liquidity</h4>
                             <h3>$ 19.583</h3>
                         </div>
-                        <div style={{textAlign: "left"}}>
-                            <h4 style={{fontWeight: 500}}>Available Liquidity</h4>
-                            <h3>$ 19.583</h3>
+                        <div style={{display: "flex"}}>
+                            <div style={{textAlign: "left", marginRight: 20}}>
+                                <h4 style={{fontWeight: 500, color: "gray"}}>Available Liquidity</h4>
+                                <h3>$ 19.583</h3>
+                            </div>
+                            <div style={{textAlign: "left"}}>
+                                <h4 style={{fontWeight: 500, color: "gray"}}>Available Liquidity</h4>
+                                <h3>$ 19.583</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,7 +126,7 @@ function CoinViewPage(props) {
                             style={{marginLeft: 10, color: "gray", display: "flex"}}><InfoOutlinedIcon/></p></span>
                         <p>None</p>
                     </div>
-                    <div className="Buttons">
+                    <div className="Buttons" style={{padding: 5}}>
                         <div className="ButtonsLeft">
                             <ActionButton color="#FF4C94" title="Deposit"/>
                             <ActionButton color="white" borderColor="#FF4C94" fontColor="#FF4C94" title="Withdraw"/>

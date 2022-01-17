@@ -141,6 +141,10 @@
     align-items: center;
 }
 
+.displayNone {
+    display: none;
+}
+
 span {
     margin-left: 16px;
 }

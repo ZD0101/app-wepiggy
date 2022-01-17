@@ -24,7 +24,8 @@
 .SidebarButtonLink {
     margin: 10px;
     font-weight: 500;
-    text-decoration: none !important
+    text-decoration: none !important;
+    text-align: left;
 }
 
 .is-active .SidebarButton {

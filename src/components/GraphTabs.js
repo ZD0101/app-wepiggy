@@ -80,7 +80,7 @@ function GraphTabs(props) {
     };
 
     return (
-        <div className="GraphTabs">
+        <div className="GraphTabs" style={{boxShadow: "0px 3px 15px rgba(0,0,0,0.1)", borderRadius: 30, marginBottom: 25}}>
             <Box>
                 <Tabs style={{width: 500}}
                     value={selectedTab}

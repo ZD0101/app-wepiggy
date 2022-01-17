@@ -23,6 +23,14 @@ function DepositsBorrowings(props) {
             </div>
             <hr/>
             <div className="Content">
+                <div style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
+                    <p style={{color: "gray", fontSize: 14}}>Asset</p>
+                    <p style={{color: "gray", fontSize: 14}}>Deposit Total APY</p>
+                    <p style={{color: "gray", fontSize: 14}}>Deposit Amount</p>
+                    <p style={{color: "gray", fontSize: 14}}>Your wallet balance</p>
+                    <p style={{color: "gray", fontSize: 14}}>Use as collateral</p>
+                    <p style={{color: "gray", fontSize: 14}}>Action</p>
+                </div>
                 <img width={300} src="https://wepiggy.static.fortop.site/app/static/placeholder.d54a0ccc.png"/>
                 {deposits ? <Deposits/> : <Borrowings/>}
             </div>
